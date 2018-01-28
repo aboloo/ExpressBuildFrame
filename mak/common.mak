@@ -3,4 +3,4 @@ CFLAGS=-g
 CC=gcc
 AR=ar -rc
 LINK=gcc
-LIBFLAGS=
+LIBFLAGS=-fPIC
