@@ -1,0 +1,28 @@
+
+ ********* Build Start Time: Sat Jan 27 20:10:50 CST 2018 *********
+ CPU Cores: 2
+make[1]: Entering directory `/localdisk/expressBuild/alib'
+make[1]: Leaving directory `/localdisk/expressBuild/alib'
+make[1]: Entering directory `/localdisk/expressBuild/alib'
+gcc -g -I/localdisk/expressBuild -c /localdisk/expressBuild/alib/./goToEast.c -o /localdisk/expressBuild/alib/./goToEast.o
+ar -rc libalib.a /localdisk/expressBuild/alib/./goToEast.o
+make[1]: Leaving directory `/localdisk/expressBuild/alib'
+make[1]: Entering directory `/localdisk/expressBuild/blib'
+make[1]: Leaving directory `/localdisk/expressBuild/blib'
+make[1]: Entering directory `/localdisk/expressBuild/blib'
+gcc -g -I/localdisk/expressBuild -c /localdisk/expressBuild/blib/./goToWest.c -o /localdisk/expressBuild/blib/./goToWest.o
+ar -rc libblib.a /localdisk/expressBuild/blib/./goToWest.o
+make[1]: Leaving directory `/localdisk/expressBuild/blib'
+make[1]: Entering directory `/localdisk/expressBuild/execMain'
+make[1]: Leaving directory `/localdisk/expressBuild/execMain'
+make[1]: Entering directory `/localdisk/expressBuild/execMain'
+gcc -g -I/localdisk/expressBuild -c /localdisk/expressBuild/execMain/./main.c -o /localdisk/expressBuild/execMain/./main.o
+gcc /localdisk/expressBuild/execMain/./main.o /localdisk/expressBuild/alib/libalib.a /localdisk/expressBuild/blib/libblib.a  /localdisk/expressBuild/alib/libalib.a  /localdisk/expressBuild/blib/libblib.a -o execMain
+make[1]: Leaving directory `/localdisk/expressBuild/execMain'
+make[1]: Entering directory `/localdisk/expressBuild/execTest'
+make[1]: Leaving directory `/localdisk/expressBuild/execTest'
+make[1]: Entering directory `/localdisk/expressBuild/execTest'
+gcc -g -I/localdisk/expressBuild -c /localdisk/expressBuild/execTest/./test_main.c -o /localdisk/expressBuild/execTest/./test_main.o
+gcc /localdisk/expressBuild/execTest/./test_main.o /localdisk/expressBuild/alib/libalib.a /localdisk/expressBuild/blib/libblib.a  /localdisk/expressBuild/alib/libalib.a  /localdisk/expressBuild/blib/libblib.a -o execTest
+make[1]: Leaving directory `/localdisk/expressBuild/execTest'
+ ********* Build End Time: Sat Jan 27 20:10:50 CST 2018 *********
